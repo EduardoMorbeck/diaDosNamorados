@@ -1,6 +1,9 @@
 let nao = document.querySelector('#nao');
 let sim = document.querySelector('#sim');
-let painel = document.querySelector('.painel')
+let painel = document.querySelector('.painel');
+let btn = document.querySelector('.btn');
+let txt = document.querySelector('.txt');
+let titulo = document.querySelector('.titulo')
 
 function fuja(){
     let windowWidth = window.innerWidth;
@@ -18,4 +21,7 @@ function fuja(){
 
 function clicou(){
     painel.style.backgroundImage = `url(img/hollowKnight-Hornet.png)`;
+    btn.classList.toggle('active');
+    titulo.classList.toggle('active');
+    txt.innerHTML = 'Eu já sabia kkkkkk, também te amo ;)';
 }
