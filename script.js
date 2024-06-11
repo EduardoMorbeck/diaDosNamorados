@@ -3,9 +3,12 @@ let sim = document.querySelector('#sim');
 let painel = document.querySelector('.painel');
 let btn = document.querySelector('.btn');
 let txt = document.querySelector('.txt');
-let titulo = document.querySelector('.titulo')
+let titulo = document.querySelector('.titulo');
+
+
 
 function fuja(){
+
     let windowWidth = window.innerWidth;
     let windowHeight = window.innerHeight;
 
