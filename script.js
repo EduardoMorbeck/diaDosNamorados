@@ -5,6 +5,7 @@ let btn = document.querySelector('.btn');
 let txt = document.querySelector('.txt');
 let titulo = document.querySelector('.titulo');
 let music = document.querySelector('#music');
+let count = 0
 
 function fuja(){
 
@@ -19,6 +20,13 @@ function fuja(){
 
     nao.style.left = aleatorioX + "px";
     nao.style.top = aleatorioY + "px";
+
+    count ++
+
+    if(count == 1){
+        music.src = 'img/Mantis Lords.mp3';
+        music.play();
+    }
 }
 
 function clicou(){
@@ -26,5 +34,6 @@ function clicou(){
     btn.classList.toggle('active');
     titulo.classList.toggle('active');
     txt.innerHTML = 'Resposta certa kkkkkk, eu te amo ;)';
+    music.src = 'img/Hollow Knight (Title Theme).mp3';
     music.play();
 }
