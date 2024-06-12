@@ -4,8 +4,7 @@ let painel = document.querySelector('.painel');
 let btn = document.querySelector('.btn');
 let txt = document.querySelector('.txt');
 let titulo = document.querySelector('.titulo');
-
-
+let music = document.querySelector('#music');
 
 function fuja(){
 
@@ -26,5 +25,6 @@ function clicou(){
     painel.style.backgroundImage = `url(img/hollowKnight-Hornet.png)`;
     btn.classList.toggle('active');
     titulo.classList.toggle('active');
-    txt.innerHTML = 'Eu já sabia kkkkkk, também te amo ;)';
+    txt.innerHTML = 'Resposta certa kkkkkk, eu te amo ;)';
+    music.play();
 }
